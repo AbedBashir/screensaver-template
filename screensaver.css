@@ -1,0 +1,25 @@
+#screensaver {
+  background-color: #fff;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition: background-color 1s ease, opacity .5s ease;
+  width: 100vw;
+  z-index: 99999;
+}
+
+#screensaver-icon {
+  height: 57px;
+  left: 10px;
+  position: absolute;
+  top: 40px;
+  width: 99px;
+}
+
+.has-active-screensaver #screensaver {
+  opacity: 1 !important;
+}
